@@ -16,8 +16,8 @@ markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
 
-//Referanced https://github.com/COSC3020/little-o-proof-JacobMorgan3 for help 
-finding formal big-Oh definitions
+//Referenced https://github.com/COSC3020/little-o-proof-JacobMorgan3 for help 
+finding formal big-Oh definition
 
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 $f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
@@ -25,7 +25,7 @@ $f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 $f(n)\in o(g(n)) \implies f(n)\in O(g(n))$
 
 $\implies$ { $\forall c>0, \forall n\ge n_0 : f(n) < c g(n)$ } $\in$  { $\exists c>0, \forall n\ge n_0 : f(n) < c g(n)$ }
-The only difference between little-oh and big-oh is the " $\forall c$ " in little-oh
-and the " $\exists c$ " in big-oh with the same condition, we can say for certain that
-if for any constant $c$ the condition is true, then there must exist a constant $c$
-such that the condition is true. 
+
+The only difference between little-oh and big-oh definitions is the "$\forall c$" in little-oh
+and the "$\exists c$" in big-oh, with both having the same condition. Thus we can say for certain that
+if for all $c$ the condition is true, then there must exist some $c$ such that the condition is true. 
