@@ -17,7 +17,7 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
-$f(n)\in O(g(n)) \iff \foreach c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
+$f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
 The only difference between big and little O is that in big O, c>=0, whereas in little o, c>0.
 Thus because { $\forall c$ : $c$ > 0} $\in$  { $\forall c$ : $c$ >= 0}, all of the $c$ that make little o true also make big O true. 
