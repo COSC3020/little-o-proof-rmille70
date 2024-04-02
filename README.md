@@ -26,4 +26,4 @@ $f(n)\in o(g(n)) \implies f(n)\in O(g(n))$
 
 $\implies$ { $\forall c>0, \forall n\ge n_0 : f(n) < c g(n)$ } $\in$  { $\exists c>0, \forall n\ge n_0 : f(n) \le c g(n)$ }
 
-Thus we can say for certain that if $\forall c>0, f(n) < c g(n)$ , then there must exist some $c>0$ such that $f(n) \le c g(n)$ 
+Thus we can say for certain that if for all $c>0, f(n) < c g(n)$ is true, then there must exist some $c>0$ such that $f(n) \le c g(n)$ 
