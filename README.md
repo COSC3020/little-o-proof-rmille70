@@ -20,12 +20,10 @@ might help with the notation for mathematical expressions.
 finding formal big-Oh definition
 
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
-$f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
+$f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) \le c g(n)$
 
 $f(n)\in o(g(n)) \implies f(n)\in O(g(n))$
 
-$\implies$ { $\forall c>0, \forall n\ge n_0 : f(n) < c g(n)$ } $\in$  { $\exists c>0, \forall n\ge n_0 : f(n) < c g(n)$ }
+$\implies$ { $\forall c>0, \forall n\ge n_0 : f(n) < c g(n)$ } $\in$  { $\exists c>0, \forall n\ge n_0 : f(n) \le c g(n)$ }
 
-The only difference between little-oh and big-oh definitions is the " $\forall c$ " in little-oh
-and the " $\exists c$ " in big-oh, with both having the same condition. Thus we can say for certain that
-if for all $c$ the condition is true, then there must exist some $c$ such that the condition is true. 
+Thus we can say for certain that if $\forall c>0, f(n) < c g(n)$ , then there must exist some $c>0$ such that $f(n) \le c g(n)$ 
