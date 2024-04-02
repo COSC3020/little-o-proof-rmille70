@@ -23,6 +23,7 @@ $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 $f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
 $f(n)\in o(g(n)) \implies f(n)\in O(g(n))$
+
 $\implies$ { $\forall c>0, \forall n\ge n_0 : f(n) < c g(n)$ } $\in$  { $\exists c>0, \forall n\ge n_0 : f(n) < c g(n)$ }
 The only difference between little-oh and big-oh is the " $\forall c$ " in little-oh
 and the " $\exists c$ " in big-oh with the same condition, we can say for certain that
